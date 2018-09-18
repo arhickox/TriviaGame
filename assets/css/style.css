@@ -21,3 +21,16 @@ body {
 h4 {
     text-align: center;
 }
+
+.questionImage {
+    display:block;
+    margin:auto;
+}
+
+#submitButtonDiv {
+    text-align: center;
+}
+
+.hidden {
+    display:none;
+}

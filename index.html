@@ -17,29 +17,155 @@
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4 gameHeader">Star Wars Quiz</h1>
-      <p class="lead">You will have 2 Minutes to answer 10 Star Wars questions. Press this button to begin.</p>
+      <p class="lead">You will have 1 minute to answer 10 Star Wars questions. Double press this button to begin.</p>
       <br>
-      <button type="button" class="btn btn-primary" id="startButton">Start</button>
+      <h3>Remaining Time: </h3><div id="timerDiv"></div>
+      <br>
+      <button type="button" class="btn btn-primary" id="startButton">Start</button><br>
     </div>
   </div>
 
 
   <br>
-  <div class="Container" id="main_box">
+  <div class="Container hidden" id="main_box">
+
 
     <div class="question">
-      <h4>Question 1: Who's Lightsaber is this?</h4>
+      <h4>Question 1: Whose Lightsaber is this?</h4>
       <img src="assets/images/lightsaber.jpg" style="margin: 20px" class="questionImage">
       <form id="question1Form">
-        <input type="radio" name="question1" value="1" /> Anakin Skywalker's <br />
-        <input type="radio" name="question1" value="2" /> Luke Skywalker's <br />
-        <input type="radio" name="question1" value="3" /> Rey's <br />
-        <input type="radio" name="question1" value="4" /> All of the Above<br />
+        <input type="radio" name="question1" value="a" /> Anakin Skywalker's <br />
+        <input type="radio" name="question1" value="b" /> Luke Skywalker's <br />
+        <input type="radio" name="question1" value="c" /> Rey's <br />
+        <input type="radio" name="question1" value="d" /> All of the Above<br />
       </form>
-
-
-      <hr>
     </div>
+    <hr>
+
+    <div class="question">
+      <h4>Question 2: What species is Chewbacca?</h4>
+      <form id="question2Form">
+        <input type="radio" name="question2" value="a" /> Gungan <br />
+        <input type="radio" name="question2" value="b" /> Wampa <br />
+        <input type="radio" name="question2" value="c" /> Wookiee <br />
+        <input type="radio" name="question2" value="d" /> Ewok <br />
+      </form>
+    </div>
+    <hr>
+
+    <div class="question">
+      <h4>Question 3: What planet was Leia raised on?</h4>
+      <form id="question3Form">
+        <input type="radio" name="question3" value="a" /> Dantooine <br />
+        <input type="radio" name="question3" value="b" /> Alderaan <br />
+        <input type="radio" name="question3" value="c" /> Yavin 4 <br />
+        <input type="radio" name="question3" value="d" /> Polis Massa <br />
+      </form>
+    </div>
+    <hr>
+
+    <div class="question">
+      <h4>Question 4: Who was Qui-Gon Jinn's Jedi Master?</h4>
+      <form id="question4Form">
+        <input type="radio" name="question4" value="a" /> Mace Windu <br />
+        <input type="radio" name="question4" value="b" /> Yoda <br />
+        <input type="radio" name="question4" value="c" /> Obi-Wan Kenobi <br />
+        <input type="radio" name="question4" value="d" /> Dooku <br />
+      </form>
+    </div>
+    <hr>
+
+    <div class="question">
+      <h4>Question 5: Who was the genetic template for the Clone Trooper Army?</h4>
+      <form id="question5Form">
+        <input type="radio" name="question5" value="a" /> Jango Fett <br />
+        <input type="radio" name="question5" value="b" /> Sifo-Dyas <br />
+        <input type="radio" name="question5" value="c" /> Boba Fett <br />
+        <input type="radio" name="question5" value="d" /> Zam Wesell <br />
+      </form>
+    </div>
+    <hr>
+
+    <div class="question">
+      <h4>Question 6: Lando Calrissian was Baron Administrator of Cloud City, which resided on which planet?</h4>
+      <form id="question6Form">
+        <input type="radio" name="question6" value="a" /> Yavin <br />
+        <input type="radio" name="question6" value="b" /> Bespin <br />
+        <input type="radio" name="question6" value="c" /> Endor <br />
+        <input type="radio" name="question6" value="d" /> Hoth <br />
+      </form>
+    </div>
+    <hr>
+
+    <div class="question">
+      <h4>Question 7: Captain Phasma was a soldier for which faction?</h4>
+      <form id="question7Form">
+        <input type="radio" name="question7" value="a" /> The Empire <br />
+        <input type="radio" name="question7" value="b" /> The Republic <br />
+        <input type="radio" name="question7" value="c" /> The Sepratists <br />
+        <input type="radio" name="question7" value="d" /> The First Order <br />
+      </form>
+    </div>
+    <hr>
+
+    <div class="question">
+      <h4>Question 8: Who killed Jabba the Hutt?</h4>
+      <form id="question8Form">
+        <input type="radio" name="question8" value="a" /> Han Solo <br />
+        <input type="radio" name="question8" value="b" /> Leia Organa <br />
+        <input type="radio" name="question8" value="c" /> Luke Skywalker <br />
+        <input type="radio" name="question8" value="d" /> Lando Calrissian <br />
+      </form>
+    </div>
+    <hr>
+
+    <div class="question">
+      <h4>Question 9: Who was Kylo Ren's father?</h4>
+      <form id="question9Form">
+        <input type="radio" name="question9" value="a" /> Luke Skywalker <br />
+        <input type="radio" name="question9" value="b" /> Supreme Leader Snoke <br />
+        <input type="radio" name="question9" value="c" /> Han Solo <br />
+        <input type="radio" name="question9" value="d" /> Unknown <br />
+      </form>
+    </div>
+    <hr>
+
+    <div class="question">
+      <h4>Question 10: Who led Rogue One during the Battle of Scarif?</h4>
+      <form id="question10Form">
+        <input type="radio" name="question10" value="a" /> Jyn Erso <br />
+        <input type="radio" name="question10" value="b" /> Luke Skywalker <br />
+        <input type="radio" name="question10" value="c" /> Admiral Ackbar <br />
+        <input type="radio" name="question10" value="d" /> Han Solo <br />
+      </form>
+    </div>
+    <hr>
+
+    <div id="submitButtonDiv">
+      <button type="button" class="btn btn-primary btn-lg" id="submit">Submit</button>
+    </div>
+
+    <div class="container" id="displays">
+      <div class="row">
+          <div class="col-2" id="winLossDiv">
+              <br>
+              <h3>Correct</h3>
+              <div id="correct">-</div>
+              <br><br>
+              <h3>Incorrect</h3>
+              <div id="incorrect">-</div>
+              <br><br>
+              <h3>Unanswered</h3>
+              <div id="unanswered">-</div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+    <hr>
+  </div>
 
 
   </div>
